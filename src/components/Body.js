@@ -1,9 +1,10 @@
 import React from 'react';
+import NavBar from './Navbar';
 
 function Body(){
     return (
         <div className="body-class">
-            Portfolio Website
+            <NavBar />
         </div>
     )
 }
