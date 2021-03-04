@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .outer-div {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.09);
   width: 22.5vw;
   height: 47.5vh;
   font-family: "Montserrat", sans-serif;
@@ -10,7 +10,15 @@
   border-radius: 20px;
   margin-left: 5vw;
   color: #fff;
-  box-shadow: 0 0;
+  box-shadow: 1px 1px 25px #09e4bd;
+}
+
+.outer-div:nth-child(2) {
+  margin-left: 7.75vw;
+}
+
+.outer-div:nth-child(3) {
+  margin-left: 7.75vw;
 }
 
 .img-container {

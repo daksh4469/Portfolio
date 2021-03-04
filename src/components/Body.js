@@ -12,6 +12,7 @@ function Body(){
             <About />
             <Projects />
             <div className="block-1">hello</div>
+            <div className="block-2">hello</div>
         </div>
     )
 }

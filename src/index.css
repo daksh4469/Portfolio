@@ -38,6 +38,15 @@ code {
   left: 5vw;
 }
 
+.block-2 {
+  background-color: #09e4bd;
+  height: 140vh;
+  width: 30vw;
+  position: absolute;
+  top: 285vh;
+  right: 5vw;
+}
+
 .hr1 {
   position: absolute;
   top: 100vh;
