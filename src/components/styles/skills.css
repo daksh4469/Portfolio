@@ -47,7 +47,16 @@
   margin-left: 3.5vw;
   height: 60px;
   width: 60px;
+}
+
+.row1 img:nth-child(even) {
   overflow: hidden;
   transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
+}
+
+.row1 img:nth-child(odd) {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 7.5s ease-in-out infinite;
 }
