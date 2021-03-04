@@ -37,3 +37,17 @@ code {
   width: 80vw;
   background-color: #fff;
 }
+
+.hr3 {
+  position: absolute;
+  top: 300vh;
+  width: 80vw;
+  background-color: #fff;
+}
+
+.hr4 {
+  position: absolute;
+  top: 400vh;
+  width: 80vw;
+  background-color: #fff;
+}
