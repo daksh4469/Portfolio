@@ -10,7 +10,7 @@
   border-radius: 20px;
   margin-left: 5vw;
   color: #fff;
-  box-shadow: 1px 1px 25px #09e4bd;
+  /* box-shadow: 1px 1px 25px #09e4bd; */
 }
 
 .outer-div:nth-child(2) {
