@@ -7,10 +7,6 @@ import CW from './images/cw.png';
 
 
 function Projects() {
-    // let names = ["EndGem","Bunny-CF Bot","Covid WelFare"];
-    // let descriptions = ["Built to organize different types of documents, according to their courses, with features including downloadable content, top downloads to date, and the ability to upload and delete documents",
-    //                     "Bunny is a discord bot for every CodeForces competitive programmer out there. It helps a competitive programmer to see fellow programmers' ratings and know what they are up to recently. ",
-    //                     "A platform thatenables different users from different locations to help the ones in need in these trying times using real time location mapped with the help of Google Maps"];
     let projects = [
         {
             name: "EndGem",
