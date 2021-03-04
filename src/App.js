@@ -5,6 +5,8 @@ function App() {
   return (
     <div className="App">
       <Body />
+      <hr className="hr1"></hr>
+      <hr className="hr2"></hr>
     </div>
   );
 }

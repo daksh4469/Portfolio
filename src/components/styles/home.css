@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.intro-text {
+  font-family: "Montserrat", sans-serif;
+  color: #09e4bd;
+  position: absolute;
+  display: flex;
+  width: 80vw;
+}
+
+.left-text {
+  font-weight: bold;
+  font-size: 10vh;
+  position: absolute;
+  left: 5vw;
+  top: 30vh;
+  text-align: left;
+  line-height: 1.5;
+}
+
+#name {
+  position: absolute;
+  top: 21.5vh;
+  left: 35vw;
+  transform: translate(-50%, -50%);
+}
+
+#name path:nth-child(1) {
+  stroke-dasharray: 523.6046142578125px;
+  stroke-dashoffset: 523.6046142578125px;
+  animation: line-anim 3s ease forwards;
+}
+
+#name path:nth-child(2) {
+  stroke-dasharray: 406.430908203125px;
+  stroke-dashoffset: 406.430908203125px;
+  animation: line-anim 3s ease forwards;
+}
+
+#name path:nth-child(3) {
+  stroke-dasharray: 431.2464904785156px;
+  stroke-dashoffset: 431.2464904785156px;
+  animation: line-anim 3s ease forwards;
+}
+
+#name path:nth-child(4) {
+  stroke-dasharray: 361.86431884765625px;
+  stroke-dashoffset: 361.86431884765625px;
+  animation: line-anim 3s ease forwards;
+}
+
+#name path:nth-child(5) {
+  stroke-dasharray: 420.09588623046875px;
+  stroke-dashoffset: 420.09588623046875px;
+  animation: line-anim 3s ease forwards;
+}
+
+#name path:nth-child(6) {
+  stroke-dasharray: 523.6053466796875px;
+  stroke-dashoffset: 523.6053466796875px;
+  animation: line-anim 3s ease forwards;
+}
+
+#name path:nth-child(7) {
+  stroke-dasharray: 358.9526672363281px;
+  stroke-dashoffset: 358.9526672363281px;
+  animation: line-anim 3s ease forwards;
+}
+
+#name path:nth-child(8) {
+  stroke-dasharray: 361.86505126953125px;
+  stroke-dashoffset: 361.86505126953125px;
+  animation: line-anim 3s ease forwards;
+}
+
+#name path:nth-child(9) {
+  stroke-dasharray: 420.0960998535156px;
+  stroke-dashoffset: 420.0960998535156px;
+  animation: line-anim 3s ease forwards;
+}
+
+#name path:nth-child(10) {
+  stroke-dasharray: 231.4295654296875px;
+  stroke-dashoffset: 231.4295654296875px;
+  animation: line-anim 3s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
