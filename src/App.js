@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <Body />
-      <hr className="hr4"></hr>
     </div>
   );
 }

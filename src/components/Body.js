@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import Projects from './Projects';
 import Skills from './Skills';
+import Contact from './Contact';
 
 function Body(){
     return (
@@ -13,6 +14,7 @@ function Body(){
             <About />
             <Projects />
             <Skills />
+            <Contact />
             <div className="block-1">hello</div>
             <div className="block-2">hello</div>
         </div>
