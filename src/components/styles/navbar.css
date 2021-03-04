@@ -18,6 +18,7 @@
 .navlist li {
   padding-top: 2.5vh;
   padding-left: 8vw;
+  cursor: pointer;
 }
 
 .navlist li a {

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.projects {
+  position: absolute;
+  top: 205vh;
+}
+
+.projects span {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(22, 22, 26, 0.8);
+  font-weight: 800;
+  font-size: 4vw;
+  position: absolute;
+  z-index: 2;
+  left: 6.5vw;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 1.5vw;
+}
