@@ -30,26 +30,33 @@
   width: 30vw;
   position: relative;
   margin-left: 55vw;
-  margin-top: -32.5vh;
+  margin-top: -30vh;
   font-family: "Montserrat", sans-serif;
 }
 
 .contact-form label {
+  color: #fff;
   font-weight: 500;
   font-size: 1.75vh;
   width: 50vw;
   margin-bottom: 10px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .msg-input {
-  height: 15vh;
+  height: 10vh;
 }
 
 .contact-form input {
   margin: 10px 0 10px 0;
   width: 30vw;
-  border-radius: 5px;
+  border-radius: 2.5px;
+}
+
+.contact-form textarea {
+  margin: 10px 0 10px 0;
+  width: 30vw;
+  border-radius: 2.5px;
 }
 
 .send-button {
@@ -65,6 +72,7 @@
   border-radius: 5px;
   border: 1px solid #09e4bd;
   color: #09e4bd;
+  cursor: pointer;
 }
 
 .send-button:hover {
