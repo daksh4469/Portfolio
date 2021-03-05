@@ -10,34 +10,22 @@
   flex-direction: row;
   list-style: none;
   position: absolute;
-  right: 1vw;
+  right: 5vw;
   font-size: 1.55vh;
   font-weight: 500;
 }
 
-.navlist-li {
+.navlist li {
   padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 8vw;
   cursor: pointer;
-}
-
-.nonscrolled {
-  background-color: #16161a;
-  color: #fff;
-}
-
-.scrolled {
-  background-color: #09e4bd;
-  color: #16161a;
 }
 
 .navlist li a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .navlist li a:hover {
-  font-size: 1.75vh;
-  font-weight: 600;
+  color: #09e4bd;
 }
