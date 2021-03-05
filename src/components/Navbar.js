@@ -1,24 +1,51 @@
-import React from 'react';
+import {React,useState,useEffect} from 'react';
 import './styles/navbar.css';
 //eslint-disable-next-line
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import AppBar from '@material-ui/core/AppBar';
+
 
 function NavBar(){
+    const [scrolled,setScrolled]=useState(false);
+
+    const handleScroll=() => {
+        const offset=window.scrollY;
+        if(offset > 200 ){
+            setScrolled(true);
+        }
+        else{
+            setScrolled(false);
+        }
+        console.log(scrolled);
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll',handleScroll)
+    })
+
+    let classes = ["navigation-bar"];
+
+    if(scrolled){
+        classes.push("scrolled");
+    }
+
     return (
-        <div className="navigation-bar" id="navbar">
-            <ul className="navlist">
+        <AppBar>
+        <div className={classes.join(" ")} id="navbar">
+            <ul className={scrolled ? "navlist scrolled" : "navlist"}>
                 {/* eslint-disable-next-line */}
-                <li><a onClick={() => scroll.scrollToTop()}>Home</a></li>
+                <li id="tab" className={scrolled ? "navlist-li scrolled" : "navlist-li nonscrolled"}><a onClick={() => scroll.scrollToTop()} className={scrolled ? "scrolled" : null}>Home</a></li>
                 {/* eslint-disable-next-line */}
-                <li><a onClick={() => scroll.scrollMore(1010)}>About</a></li>
+                <li id="tab" className={scrolled ? "navlist-li scrolled" : "navlist-li nonscrolled"}><a onClick={() => scroll.scrollMore(1010)} className={scrolled ? "scrolled" : null}>About</a></li>
                 {/* eslint-disable-next-line */}
-                <li><a onClick={() => scroll.scrollMore(2010)}>Projects</a></li>
+                <li id="tab" className={scrolled ? "navlist-li scrolled" : "navlist-li nonscrolled"}><a onClick={() => scroll.scrollMore(2010)} className={scrolled ? "scrolled" : null}>Projects</a></li>
                 {/* eslint-disable-next-line */}
-                <li><a onClick={() => scroll.scrollMore(3010)}>Skills</a></li>
+                <li id="tab" className={scrolled ? "navlist-li scrolled" : "navlist-li nonscrolled"}><a onClick={() => scroll.scrollMore(3010)} className={scrolled ? "scrolled" : null}>Skills</a></li>
                 {/* eslint-disable-next-line */}
-                <li><a onClick={() => scroll.scrollToBottom()}>Contact</a></li>
+                <li id="tab" className={scrolled ? "navlist-li scrolled" : "navlist-li nonscrolled"}><a onClick={() => scroll.scrollToBottom()} className={scrolled ? "scrolled" : null}>Contact</a></li>
             </ul>
         </div>
+        </AppBar>
     )
 }
 
