@@ -6,13 +6,17 @@ const nodemailer = require("nodemailer");
 const app = express();
 app.use(cors());
 app.use(express.json());
+require('dotenv').config();
+
+const Email = process.env.EMAIL;
+const Password = process.env.PASSWORD;
 
 const contactEmail = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
     auth: {
-      user: "ddaksh.2711@gmail.com",
-      pass: "d@k$h2711",
+      user: Email,
+      pass: Password,
     },
 });
 
