@@ -11,6 +11,9 @@
 # production
 /build
 
+# to hide smtp credentials
+/backend
+
 # misc
 .DS_Store
 .env.local
