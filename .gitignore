@@ -12,7 +12,7 @@
 /build
 
 # to hide smtp credentials
-backend/
+/backend
 
 # misc
 .DS_Store
