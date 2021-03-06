@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 require('dotenv').config();
-
+require('dotenv').config({path:__dirname+'/../.env'})
 const Email = process.env.EMAIL;
 const Password = process.env.PASSWORD;
 
