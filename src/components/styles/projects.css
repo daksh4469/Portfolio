@@ -19,7 +19,23 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  margin-left: 1.5vw;
+  margin-left: 5vw;
+  overflow-x: scroll;
+  width: 89.5vw;
+}
+
+.card-list::-webkit-scrollbar {
+  width: 3px; /* width of the entire scrollbar */
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: #16161a; /* color of the tracking area */
+}
+
+.card-list::-webkit-scrollbar-thumb {
+  background-color: rgba(9, 228, 189, 0.75); /* color of the scroll thumb */
+  border-radius: 2px; /* roundness of the scroll thumb */
+  border: 3px solid #16161a; /* creates padding around scroll thumb */
 }
 
 @media (max-width: 768px) {

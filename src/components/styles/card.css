@@ -8,23 +8,22 @@
   position: relative;
   margin-top: 20vh;
   border-radius: 20px;
-  margin-left: 5vw;
+  margin-right: 5vw;
   color: #fff;
+  min-width: 22.5vw;
   /* box-shadow: 1px 1px 25px #09e4bd; */
-}
-
-.outer-div:nth-child(2) {
-  margin-left: 7.75vw;
-}
-
-.outer-div:nth-child(3) {
-  margin-left: 7.75vw;
 }
 
 .img-container {
   position: relative;
   padding-top: 1.5vh;
   align-self: center;
+}
+
+.img-container img {
+  max-width: 90%;
+  max-height: auto;
+  border-radius: 20px;
 }
 
 .card-name {

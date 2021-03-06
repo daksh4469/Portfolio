@@ -4,6 +4,7 @@ import Card from './Card';
 import EndGem from './images/endgem.png';
 import Bunny from './images/bunny.png';
 import CW from './images/cw.png';
+import Theme from './images/vs.png';
 
 
 function Projects() {
@@ -24,7 +25,13 @@ function Projects() {
             name: "Covid WelFare",
             image: CW,
             code: "https://github.com/daksh4469/covid-welfare-frontend",
-            description: "A platform thatenables different users from different locations to help the ones in need in these trying times using real time location mapped with the help of Google Maps"
+            description: "A platform that enables different users from different locations to help the ones in need in these trying times using real time location mapped with the help of Google Maps"
+        },
+        {
+            name: "Crusty Theme",
+            image: Theme,
+            code: "https://github.com/daksh4469/vscode-theme",
+            description: "A colour theme extension providing a Dark them for Visual Studio Code. You can download this extension from here"
         }
     ];
     return(
