@@ -14,7 +14,7 @@
 .contact-me {
   position: relative;
   margin-left: 10vw;
-  margin-top: 10vh;
+  margin-top: 7.5vh;
   width: 30vw;
   text-align: left;
   font-family: "Montserrat", sans-serif;
@@ -31,7 +31,7 @@
   width: 30vw;
   position: relative;
   margin-left: 55vw;
-  margin-top: -30vh;
+  margin-top: -32.5vh;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -49,13 +49,15 @@
 }
 
 .contact-form input {
-  margin: 10px 0 10px 0;
+  margin: 10px 0 30px 0;
   width: 30vw;
   border-radius: 2.5px;
 }
 
 .contact-form textarea {
   margin: 10px 0 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
   width: 30vw;
   border-radius: 2.5px;
 }
@@ -71,13 +73,29 @@
   height: 4vh;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 5px;
-  border: 1px solid #09e4bd;
+  border: 2px solid #09e4bd;
   color: #09e4bd;
   cursor: pointer;
+}
+
+.status-text {
+  padding-top: 1.5vh;
+  height: 3vh;
+  width: 30vw;
+  font-weight: 600;
+  font-size: 1.25vw;
+  letter-spacing: 1px;
+  color: rgb(101, 236, 83);
 }
 
 .send-button:hover {
   background-color: rgb(133, 255, 229);
   color: #16161a;
   transition: 0.5s;
+}
+
+input[type="text"] {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 5px;
+  font-size: 1vw;
 }

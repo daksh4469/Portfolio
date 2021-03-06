@@ -8,8 +8,10 @@ function Contact(){
         name: "",
         email: "",
         message: "",
-        status: "Submit"
+        status: "PING ME!"
     });
+
+    const [statusText,setStatusText] = useState("");
 
     function handleChange(e){
         const field = e.target.id;
@@ -37,7 +39,7 @@ function Contact(){
         event.preventDefault();  
         setForm({
             ...form,
-            status: "Sending"
+            status: "Sending..."
         });
         axios({
           method: "POST",
@@ -45,10 +47,16 @@ function Contact(){
           data: form,
         }).then((response) => {
           if (response.data.status === "sent") {
-            alert("Message Sent");
+            // alert("Message Sent");
+            setStatusText("Message Sent!");
+            setTimeout(() =>{
+                setStatusText("");
+            },5000);
             setForm({ name: "", email: "", message: "", status: "Submit" });
           } else if (response.data.status === "failed") {
-            alert("Message Failed");
+            // alert("Message Failed");
+            document.getElementsByClassName("status-text")[0].style.color = "red";
+            setStatusText("Please Try Again...");
           }
         });
     }
@@ -62,13 +70,15 @@ function Contact(){
             <div className="contact-form">
                 <form onSubmit={handleSubmit} method="POST">
                     <label>Name: </label><br />
-                    <input id="username" name="name" value={form.name} onChange={handleChange} type="text"></input><br />
+                    <input id="username" name="name" value={form.name} onChange={handleChange} type="text" required></input><br />
                     <label>Email: </label><br />
-                    <input id="email" name="email" value={form.email} onChange={handleChange} type="text"></input><br />
+                    <input id="email" name="email" value={form.email} onChange={handleChange} type="text" required></input><br />
                     <label>Message: </label><br />
                     <textarea id="message" name="message" value={form.message} onChange={handleChange} className="msg-input" type="text"></textarea><br />
                 </form>
                 <button className="send-button" type="submit" onClick={handleSubmit}>{buttonText}</button>
+                <div className="status-text">{statusText}</div>
+
             </div>
         </div>
     )   
