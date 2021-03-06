@@ -10,7 +10,7 @@
 
 .left-text {
   font-weight: bold;
-  font-size: 10vh;
+  font-size: 5.25vw;
   position: absolute;
   left: 5vw;
   top: 15vw;
@@ -23,6 +23,7 @@
   top: 21.5vh;
   left: 35vw;
   transform: translate(-50%, -50%);
+  height: 20vw;
 }
 
 #name path:nth-child(1) {
@@ -88,5 +89,24 @@
 @keyframes line-anim {
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-text {
+    font-weight: bold;
+    font-size: 15vw;
+    position: absolute;
+    left: 5vw;
+    top: 25vw;
+    text-align: left;
+  }
+
+  #name {
+    position: absolute;
+    top: 26.5vh;
+    left: 49vw;
+    transform: translate(-50%, -50%);
+    height: 13.5vw;
   }
 }

@@ -54,3 +54,47 @@
   margin-left: 1vw;
   float: left;
 }
+
+@media (max-width: 768px) {
+  .outer-div {
+    background-color: rgba(255, 255, 255, 0.09);
+    width: 60vh;
+    height: 75vh;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    margin-top: 20vh;
+    border-radius: 20px;
+    margin-left: 5vw;
+    color: #fff;
+  }
+
+  .img-container img {
+    width: 54vh;
+    padding-top: 2vh;
+  }
+
+  .card-name {
+    font-weight: 600;
+    font-size: 5vh;
+    position: relative;
+    padding-top: 2vh;
+    padding-left: 3vh;
+    text-align: left;
+  }
+
+  .inner-div {
+    font-size: 3vh;
+    padding-top: 2vh;
+    padding-left: 3vh;
+    width: 55vh;
+  }
+
+  .code-link {
+    height: 5vh;
+    width: auto;
+    position: relative;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    float: left;
+  }
+}

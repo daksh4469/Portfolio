@@ -29,3 +29,16 @@
 .navlist li a:hover {
   color: #09e4bd;
 }
+
+@media (max-width: 768px) {
+  .naigation-bar {
+    display: none;
+  }
+  .navlist {
+    display: none;
+  }
+
+  .navlist li {
+    display: none;
+  }
+}

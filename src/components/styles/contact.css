@@ -99,3 +99,45 @@ input[type="text"] {
   padding-left: 5px;
   font-size: 1vw;
 }
+
+@media (max-width: 768px) {
+  .contact-div {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 100vh;
+    width: 162.75vw;
+    position: absolute;
+    z-index: -1;
+    top: 550vh;
+    text-align: left;
+  }
+
+  .contact-me img {
+    position: absolute;
+    left: 45vw;
+    top: 15vh;
+  }
+
+  .contact-form {
+    width: 100vw;
+    position: relative;
+    margin-left: 12vw;
+    margin-top: 5vh;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .contact-form input {
+    width: 120vw;
+    height: 3vh;
+  }
+
+  .contact-form textarea {
+    width: 120vw;
+    height: 15vh;
+  }
+
+  .send-button {
+    width: 90vw;
+    height: 6vh;
+  }
+}
