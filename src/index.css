@@ -47,30 +47,7 @@ code {
   right: 5vw;
 }
 
-.hr1 {
-  position: absolute;
-  top: 100vh;
-  width: 80vw;
-  background-color: #fff;
-}
-
-.hr2 {
-  position: absolute;
-  top: 200vh;
-  width: 80vw;
-  background-color: #fff;
-}
-
-.hr3 {
-  position: absolute;
-  top: 300vh;
-  width: 80vw;
-  background-color: #fff;
-}
-
-.hr4 {
-  position: absolute;
-  top: 400vh;
-  width: 80vw;
-  background-color: #fff;
+.scroll-icon:hover {
+  transition: all ease-in-out 0.35s;
+  transform: scale(1.15);
 }

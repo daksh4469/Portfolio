@@ -6,6 +6,7 @@
   height: 50vh;
   width: 100%;
   position: absolute;
+  z-index: -1;
   top: 400vh;
   text-align: left;
 }

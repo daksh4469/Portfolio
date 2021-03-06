@@ -15,8 +15,8 @@ function Body(){
             <Projects />
             <Skills />
             <Contact />
-            <div className="block-1">hello</div>
-            <div className="block-2">hello</div>
+            <div className="block-1"></div>
+            <div className="block-2"></div>
         </div>
     )
 }
