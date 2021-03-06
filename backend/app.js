@@ -9,7 +9,7 @@ require('dotenv').config();
 require('dotenv').config({path:__dirname+'/../.env'})
 const Email = process.env.EMAIL;
 const Password = process.env.PASSWORD;
-
+app.use(router);
 const Port = process.env.PORT || 5000;
 
 const buildPath = path.join(__dirname, '..', 'build');
