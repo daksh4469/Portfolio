@@ -25,8 +25,8 @@ function Skills(){
         <span className="tools">Framework and Tools</span>
         <div className="row1">
             {
-                imagesrow1.map((image) => (
-                    <img src={image} alt="skill"></img>
+                imagesrow1.map((image,i) => (
+                    <img key={i} src={image} alt="skill"></img>
                 ))
             }
             <br/>
@@ -34,16 +34,16 @@ function Skills(){
             <br/>
             <br/>
             {
-                imagesrow2.map((image) => (
-                    <img src={image} alt="skill"></img>
+                imagesrow2.map((image,i) => (
+                    <img key={i} src={image} alt="skill"></img>
                 ))
             }
             <br/>
             <br/>
             <br/>
             {
-                imagesrow3.map((image) => (
-                    <img src={image} alt="skill"></img>
+                imagesrow3.map((image,i) => (
+                    <img key={i} src={image} alt="skill"></img>
                 ))
             }
         </div>

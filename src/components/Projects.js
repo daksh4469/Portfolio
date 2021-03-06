@@ -32,8 +32,8 @@ function Projects() {
             <span>PROJECTS</span>
             <div className="card-list">
             {
-                projects.map((project)=>(
-                    <Card name={project.name} description={project.description} image={project.image} code={project.code}/>
+                projects.map((project,i)=>(
+                    <Card key={i} name={project.name} description={project.description} image={project.image} code={project.code}/>
                 ))
             }
             </div>
