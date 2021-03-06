@@ -43,7 +43,7 @@ function Contact(){
         });
         axios({
           method: "POST",
-          url: "http://localhost:5000/contact",
+          url: "/contact",
           data: form,
         }).then((response) => {
           if (response.data.status === "sent") {

@@ -2,14 +2,18 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
-
+const path = require("path");
 const app = express();
-app.use(cors());
 app.use(express.json());
 require('dotenv').config();
 require('dotenv').config({path:__dirname+'/../.env'})
 const Email = process.env.EMAIL;
 const Password = process.env.PASSWORD;
+
+const Port = process.env.PORT || 5000;
+
+const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.static(buildPath));
 
 const contactEmail = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -49,4 +53,4 @@ contactEmail.verify((error) => {
 
 app.use("/", router);
 
-app.listen(5000, () => console.log("Server Running"));
+app.listen(Port, () => console.log("Server Running"));
