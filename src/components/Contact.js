@@ -1,5 +1,5 @@
 import {React,useState} from 'react';
-import axios from "axios";
+import emailjs from 'emailjs-com';
 import './styles/contact.css';
 import Wave from './images/wave.png';
 
@@ -35,30 +35,36 @@ function Contact(){
         }
     }
 
-    function handleSubmit(event){
-        event.preventDefault();  
-        setForm({
-            ...form,
-            status: "Sending..."
-        });
-        axios({
-          method: "POST",
-          url: "https://dakshdoshi.herokuapp.com/contact",
-          data: form,
-        }).then((response) => {
-          if (response.data.status === "sent") {
-            // alert("Message Sent");
-            setStatusText("Message Sent!");
-            setTimeout(() =>{
+    function handleSubmit(e){
+        e.preventDefault();  
+        emailjs.sendForm('service_wmlfl3r', 'template_zmdur0k', e.target, 'user_VolNxljWUZwnegk8ni3h0')
+        .then((result) => {
+            // console.log(result.text);
+            setStatusText("Message Sent");
+            setForm({
+                name: "",
+                email: "",
+                message: "",
+                status: "PING ME!"
+            });
+            setTimeout(() => {
                 setStatusText("");
             },5000);
-            setForm({ name: "", email: "", message: "", status: "Submit" });
-          } else if (response.data.status === "failed") {
-            // alert("Message Failed");
-            document.getElementsByClassName("status-text")[0].style.color = "red";
+        }, (error) => {
+            console.log(error.text);
+            document.getElementsByClassName("status-text")[0].color = "red";
             setStatusText("Please Try Again...");
-          }
+            setForm({
+                name: "",
+                email: "",
+                message: "",
+                status: "PING ME!"
+            });
+            setTimeout(() => {
+                setStatusText("");
+            },5000);
         });
+        e.target.reset();
     }
     let buttonText = form.status;
     return(
@@ -75,8 +81,8 @@ function Contact(){
                     <input id="email" name="email" value={form.email} onChange={handleChange} type="text" required></input><br />
                     <label>Message: </label><br />
                     <textarea id="message" name="message" value={form.message} onChange={handleChange} className="msg-input" type="text"></textarea><br />
+                    <button className="send-button" type="submit">{buttonText}</button>
                 </form>
-                <button className="send-button" type="submit" onClick={handleSubmit}>{buttonText}</button>
                 <div className="status-text">{statusText}</div>
 
             </div>
