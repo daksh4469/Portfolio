@@ -43,7 +43,7 @@ function Contact(){
         });
         axios({
           method: "POST",
-          url: "/contact",
+          url: "https://dakshdoshi.herokuapp.com/contact",
           data: form,
         }).then((response) => {
           if (response.data.status === "sent") {
